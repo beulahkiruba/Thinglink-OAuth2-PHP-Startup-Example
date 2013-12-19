@@ -16,10 +16,10 @@ function initAuth(acc_token)
 	var access_token=acc_token;
 	// Your credentials
 	TLC.init({
-		client:'469422445300809730',
-		user: 'EgoApp',
+		client:'clientid',
+		user: 'user',
 		isOwner: true,
-		redirectUri: 'http://staging.emantras.com/emantrasvss/thinglink/redirect.html'
+		redirectUri: 'your url'
 	});
 	
 	function jsonparser1() {
@@ -43,10 +43,10 @@ window.callbackJSON = function(actualJsonpData) {
  session_start();
 //returns session token for calls to API using oauth 2.0
 function get_oauth2_token() {
-    $client_id='469422445300809730';
-    $username='beulahgnanam.rm@emantras.com';
-	$password='beatific';
-	$client_secret='Ndk8qvRHAmTm5cxuyA2kXaUZNyM';
+    $client_id='client id';
+    $username='someone@somewhere.com';
+	$password='your password';
+	$client_secret='your secret';
     $oauth2token_url = "https://www.thinglink.com/auth/token";
     $clienttoken_post = array(
 		"username" => $username,
